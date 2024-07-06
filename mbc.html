@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBC Laboratory</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</head>
+<body onload="showSection('deskripsi')">
+    <header>
+        <h1>MBC Laboratory</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('deskripsi')">Beranda</a></li>
+                <li><a href="#" onclick="showSection('divisi')">Divisi</a></li>
+                <li><a href="#" onclick="showSection('kontak')">Kontak</a></li>
+                <li><a href="#" onclick="showSection('developer')">Developer</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="deskripsi">
+            <h2>Deskripsi Perusahaan</h2>
+            <p>MBC Laboratory adalah sebuah Pusat Riset Teknologi dan sebuah Perusahaan yang bergerak di bidang Konsultan Cybersecurity, Big Data, Game Technology, dan Geographic Information System.</p>
+            <img src="komputer/background 1page.jpg" alt="MBC Laboratory" class="responsive-img">
+        </section>
+        <section id="divisi" style="display: none;">
+            <h2>Divisi</h2>
+            <div class="divisi-section">
+                <div>
+                    <img src="komputer/cybersecurity-realities.jpg" alt="Cybersecurity" class="responsive-img">
+                    <h3>Cybersecurity</h3>
+                    <p>MBC Laboratory belajar mengenai konsultasi dan solusi keamanan siber untuk melindungi data dan sistem informasi dari ancaman cyber.</p>
+                </div>
+                <div>
+                    <img src="komputer/big data.jpg" alt="Big Data" class="responsive-img">
+                    <h3>Big Data</h3>
+                    <p>MBC Laboratory mempelajari layanan analisis data besar untuk membantu perusahaan membuat keputusan berbasis data dan meningkatkan kinerja bisnis.</p>
+                </div>
+                <div>
+                    <img src="komputer/game technology.jpg" alt="Game Technology" class="responsive-img">
+                    <h3>Game Technology</h3>
+                    <p>MBC Laboratory mengembangkan teknologi game dan menyediakan solusi inovatif untuk industri game, termasuk pengembangan game, VR, dan AR.</p>
+                </div>
+                <div>
+                    <img src="komputer/Geographical Information System.jpg" alt="GIS" class="responsive-img">
+                    <h3>Geographical Information System (GIS)</h3>
+                    <p>MBC Laboratory mempelajari layanan GIS yang meliputi pemetaan, analisis spasial, dan solusi geoinformatika untuk berbagai sektor.</p>
+                </div>
+            </div>
+        </section>
+        <section id="kontak" style="display: none;">
+            <h2>Kontak</h2>
+            <p>Alamat: Jl. Telekomunikasi No. 1, Terusan Buah Batu, Bandung</p>
+            <p>Telepon: <a href="tel:+6212345678">+62 822-5657-7789</a></p>
+            <div class="icons">
+                <a href="https://www.instagram.com/mbclab?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="komputer/instagram.jpg" alt="Instagram" class="icon"></a>
+                <a href="https://www.linkedin.com/company/mbclaboratory/"><img src="komputer/linkedin.jpg" alt="LinkedIn" class="icon"></a>
+            </div>
+        </section>
+        <section id="developer" style="display: none;">
+            <h2>Web Developer</h2>
+            <img src="komputer/WhatsApp Image 2024-07-06 at 14.08.45.jpeg" alt="Developer" class="responsive-img">
+            <p>Nama             : Bagas Maharda Wisesa</p>
+            <p>Tanggal Lahir    : 10 Juli 2005</p>
+            <p>NIM              : 101012340349</p>
+            <p>Jurusan          : S1 Teknik Telekomunikasi</p>
+            <p>Angkatan         : 2023</p>
+            <p>Domisili         : Bandung</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 MBC Laboratory </p>
+    </footer>
+</body>
+</html>
